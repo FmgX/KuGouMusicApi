@@ -14,7 +14,7 @@ COPY --chown=node:node package.json pnpm-lock.yaml ./
 
 USER node
 
-RUN pnpm install --prod --frozen-lockfile
+RUN pnpm install
 
 COPY --chown=node:node . ./
 
